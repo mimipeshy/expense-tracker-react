@@ -1,13 +1,14 @@
 import React from 'react';
-import LoginForm from './components/login';
+import { Route, Switch } from 'react-router-dom';
+import Books from './components/books/books';
+import Book from './components/book/book';
 import './index.css';
 
-function App() {
-  return (
-    <div className="App">
-      <LoginForm />
-    </div>
-  );
-}
+const App = () => (
+  <Switch>
+    <Route exact path="/" component={Books} />
+    <Route exact path="/books/:id" component={Book} />
+  </Switch>
+);
 
 export default App;
