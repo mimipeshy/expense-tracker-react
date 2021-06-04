@@ -1,16 +1,23 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { fetchUsers } from '../actions';
-import '../styles/App.css';
+import Routes from './components/Routes';
+import { fetchUsers } from './actions';
+import Header from './components/Header';
+import './styles/index.css';
 
 function App() {
   return (
     <>
+      <Header />
+      <Router>
+        <Routes />
+      </Router>
     </>
   );
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   user: state.userReducer.user,
 });
 
