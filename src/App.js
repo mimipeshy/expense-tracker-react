@@ -1,10 +1,21 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
-import './index.css';
+import { connect } from 'react-redux';
+import { fetchUsers } from '../actions';
+import '../styles/App.css';
 
-const App = () => (
-  <Switch>
-  </Switch>
-);
+function App() {
+  return (
+    <>
+    </>
+  );
+}
 
-export default App;
+const mapStateToProps = state => ({
+  user: state.userReducer.user,
+});
+
+const mapDispatchToProps = () => ({
+  fetchUsers,
+});
+
+export default connect(mapStateToProps, mapDispatchToProps())(App);
