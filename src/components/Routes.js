@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch } from 'react-router-dom';
-import ProtectedLogin from './ProtectedLogin';
-import Login from './Login';
+import ProtectedLogin from '../containers/ProtectedLogin';
+import Login from '../containers/Login';
 
 const Routes = () => (
   <Switch>

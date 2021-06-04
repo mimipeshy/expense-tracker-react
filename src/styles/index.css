@@ -1,45 +1,40 @@
 body {
   margin: 0;
-  font-family:Arial, Helvetica, sans-serif;
-  background-color:whitesmoke;
-  font-family: 'Lato', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
 }
 
-.blue{
-  color: #62B5E5;
-}
-.grey{
-  color:#67899c;
-}
-.green{
- color:#ADDC91;
+.blue {
+  color: #62b5e5;
 }
 
-.login-page{
-    box-shadow:1 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    border-radius: 3px;
-    height:auto;
-    width: 100%;
-    margin-top: 10vh;
-    background: white;
-    padding:1em 0;
-    position: relative;
-    transition:height 0.5s;
+.grey {
+  color: #67899c;
 }
 
-.login-page button{
+.green {
+  color: #addc91;
+}
+
+.login-page {
+  height: auto;
+  width: 100%;
+  margin-top: 10vh;
+  background: white;
+  padding: 1em 0;
+  position: relative;
+  transition: height 0.5s;
+}
+
+.login-page button {
   width: 100%;
   color: white;
   font-size: 1em;
-
 }
 
-.login-page input[type=text]{
-width: 100%;
+.login-page input[type=text] {
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-
 }
-
