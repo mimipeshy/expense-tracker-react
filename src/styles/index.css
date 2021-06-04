@@ -1,40 +1,170 @@
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: whitesmoke;
-}
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 
-.blue {
-  color: #62b5e5;
-}
-
-.grey {
-  color: #67899c;
-}
-
-.green {
-  color: #addc91;
-}
-
-.login-page {
-  height: auto;
-  width: 100%;
-  margin-top: 10vh;
-  background: white;
-  padding: 1em 0;
-  position: relative;
-  transition: height 0.5s;
-}
-
-.login-page button {
-  width: 100%;
-  color: white;
-  font-size: 1em;
-}
-
-.login-page input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+button {
+  font-family: Abel, sans-serif;
+}
+
+button {
+  border: 1px solid #5b8092;
+  background-color: #4cb5e8;
+  color: white;
+}
+
+header {
+  margin-bottom: 10px;
+  position: fixed;
+  box-shadow: 0 2px 13px 2px rgba(0, 0, 0, 0.67);
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+header h1 {
+  background-color: #4cb5e8;
+  color: white;
+  font-size: 16px;
+  padding: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.login-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.login-container form {
+  display: grid;
+  grid-gap: 20px;
+  font-size: 20px;
+}
+
+.login-container input,
+.login-container button {
+  font-size: 20px;
+  padding: 5px;
+}
+
+nav {
+  grid-auto-flow: column;
+  display: grid;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background-color: white;
+  font-weight: 800;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+nav a,
+nav div {
+  font-size: 0.5rem;
+  text-decoration: none;
+  background-color: #5b8092;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.nav-item {
+  display: grid;
+  padding: 10px 0;
+}
+
+.nav-item i {
+  font-size: 20px;
+}
+
+.active {
+  background-color: #4cb5e8;
+  clip-path: polygon(0 0, 40% 0, 50% 10%, 60% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.home-container,
+.chart-container,
+.expenses-container,
+.add-expense-container,
+.login-container {
+  padding: 10px;
+  margin-bottom: 50px;
+  overflow: scroll;
+  margin-top: 65px;
+}
+
+.home-container {
+  text-align: center;
+  display: grid;
+  height: 80vh;
+  grid-template-rows: max-content;
+  place-content: center;
+  grid-gap: 20px;
+}
+
+.add-expense-form {
+  display: grid;
+  font-size: 20px;
+  grid-gap: 5px;
+}
+
+.add-expense-form button,
+.add-expense-form input,
+.add-expense-form select,
+.add-expense-form textarea {
+  font-size: 16px;
+}
+
+.add-expense-form textarea {
+  height: 150px;
+  padding: 5px;
+}
+
+.add-expense-form input,
+.add-expense-form select {
+  padding: 5px;
+}
+
+.add-expense-form label {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.add-expense-form button {
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.expense-header {
+  font-weight: 800;
+}
+
+.expense-item,
+.expense-header {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 50px 100px 80px 1fr;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  border-bottom: 1px solid black;
+}
+
+.bar-chart {
+  display: flex;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 15px;
 }

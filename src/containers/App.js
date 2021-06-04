@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Routes from '../components/Routes';
 import { fetchUsers } from '../actions';
 import Header from '../components/Header';
-import './styles/index.css';
+import '../styles/index.css';
 
 function App() {
   return (
