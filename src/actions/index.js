@@ -1,9 +1,8 @@
 import {
-    FETCH_USERS, NEW_RECORD, FETCH_RECORDS, LOGIN, LOGOUT,
-    NEW_REVIEW, FETCH_REVIEWS
+    FETCH_USERS, NEW_EXPENSE, FETCH_EXPENSES, LOGIN, LOGOUT,
 } from './types';
 
-const url = 'https://stark-garden-17635.herokuapp.com/';
+const url = 'https://peris-expense-track.herokuapp.com';
 
 export const fetchUsers = () => dispatch => {
     fetch(`${url}/users`)
@@ -13,20 +12,20 @@ export const fetchUsers = () => dispatch => {
             payload: users,
         }));
 };
-export const fetchRecords = id => dispatch => {
-    fetch(`${url}/books`)
+export const fetchExpenses = id => dispatch => {
+    fetch(`${url}/expenses`)
         .then(data => data.json())
         .then(records => {
-            const filteredRecords = records.filter(record => record.book_id === id);
+            const filteredExpenses = expenses.filter(expense => expense.user_id === id);
             dispatch({
-                type: FETCH_RECORDS,
-                payload: filteredRecords,
+                type: FETCH_EXPENSES,
+                payload: filteredExpenses,
             });
         });
 };
 
-export const newRecord = postData => dispatch => {
-    fetch(`${url}/books`, {
+export const newExpense = postData => dispatch => {
+    fetch(`${url}/expenses`, {
         method: 'POST',
         body: JSON.stringify(postData),
         headers: {
@@ -34,24 +33,9 @@ export const newRecord = postData => dispatch => {
         },
     })
         .then(res => res.json())
-        .then(record => dispatch({
-            type: NEW_RECORD,
-            payload: record,
-        }));
-};
-
-export const newReview = postData => dispatch => {
-    fetch(`${url}/reviews`, {
-        method: 'POST',
-        body: JSON.stringify(postData),
-        headers: {
-            'Content-Type': 'application/json',
-        },
-    })
-        .then(res => res.json())
-        .then(record => dispatch({
-            type: NEW_REVIEW,
-            payload: review,
+        .then(expense => dispatch({
+            type: NEW_EXPENSE,
+            payload: expense,
         }));
 };
 
