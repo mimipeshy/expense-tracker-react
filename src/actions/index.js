@@ -26,12 +26,10 @@ export const fetchExpenses = (id) => (dispatch) => {
 
 export const newExpense = (postData) => (dispatch) => {
   fetch(`${url}/expenses`, {
-    mode: 'no-cors',
     method: 'POST',
     body: JSON.stringify(postData),
     headers: {
       'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin': '*',
     },
   })
     .then((res) => res.json())
@@ -49,12 +47,10 @@ export const login = (userObj, username) => (dispatch) => {
     });
   } else {
     fetch(`${url}/users`, {
-      mode: 'no-cors',
       method: 'POST',
       body: JSON.stringify({ username }),
       headers: {
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
       },
     })
       .then((res) => res.json())

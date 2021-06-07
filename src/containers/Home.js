@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 function Home({ user }) {
   return (
     <div className="home-container">
-      <h1>Welcome {user.username.toUpperCase()}</h1>
+      <h1>Welcome {user.username}</h1>
       <h3>
         &quot;Beware of little expenses.A small leak will sink a great
         ship&quot; - Benjamin Franklin

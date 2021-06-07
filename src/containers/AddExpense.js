@@ -34,11 +34,11 @@ function AddExpense({ newExpense, user }) {
         </label>
         <label htmlFor="amount">
           amount:
-          <input type="number" id="quantity" name="amount" />
+          <input type="number" id="amount" name="amount" />
         </label>
         <label htmlFor="date">
           date:
-          <textarea type="text" id="date" />
+          <textarea type="date" id="date" />
         </label>
         <button type="submit" onClick={addNewExpense}>
           Add Expense
