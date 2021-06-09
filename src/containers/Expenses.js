@@ -13,22 +13,25 @@ function Expenses({ expenses = [], fetchExpenses, user }) {
     <div className="expenses-container">
       <h2>All Expenses</h2>
       <div>
-        <div className="record-header">
+        <div className="expense-header">
           <p>No</p>
           <p>Name</p>
-          <p>Amount KES</p>
+          <p>Amount</p>
           <p>Date</p>
         </div>
         {expenses
-                    && expenses.map((record, index) => (
-                      <div key={record.id} className="record-item">
+                    && expenses.map((expense, index) => (
+                      <div key={expense.id} className="expense-item">
                         <p>{index + 1}</p>
                         <p>
-                          $
-                          {record.portfolio}
+                          {expense.name}
                         </p>
-                        <p>{record.emotion}</p>
-                        <p>{record.description}</p>
+                        <p>
+                          {' '}
+                          Ksh
+                          {expense.amount}
+                        </p>
+                        <p>{expense.date}</p>
                       </div>
                     ))}
       </div>
@@ -45,7 +48,7 @@ Expenses.propTypes = {
 };
 
 const mapStateToProps = (state) => ({
-  expenses: state.recordReducer.expenses,
+  expenses: state.expenseReducer.expenses,
   user: state.userReducer.user,
 });
 

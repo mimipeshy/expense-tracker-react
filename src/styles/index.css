@@ -96,7 +96,7 @@ nav div {
 .home-container,
 .chart-container,
 .expenses-container,
-.add-expense-container,
+.add-Expense-container,
 .login-container {
   padding: 10px;
   margin-bottom: 50px;
@@ -113,35 +113,35 @@ nav div {
   grid-gap: 20px;
 }
 
-.add-expense-form {
+.add-Expense-form {
   display: grid;
   font-size: 20px;
   grid-gap: 5px;
 }
 
-.add-expense-form button,
-.add-expense-form input,
-.add-expense-form select,
-.add-expense-form textarea {
+.add-Expense-form button,
+.add-Expense-form input,
+.add-Expense-form select,
+.add-Expense-form textarea {
   font-size: 16px;
 }
 
-.add-expense-form textarea {
+.add-Expense-form textarea {
   height: 150px;
   padding: 5px;
 }
 
-.add-expense-form input,
-.add-expense-form select {
+.add-Expense-form input,
+.add-Expense-form select {
   padding: 5px;
 }
 
-.add-expense-form label {
+.add-Expense-form label {
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
 
-.add-expense-form button {
+.add-Expense-form button {
   padding: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;

@@ -38,7 +38,7 @@ function AddExpense({ newExpense, user }) {
         </label>
         <label htmlFor="date">
           date:
-          <textarea type="date" id="date" />
+          <input type="date" id="date" />
         </label>
         <button type="submit" onClick={addNewExpense}>
           Add Expense
