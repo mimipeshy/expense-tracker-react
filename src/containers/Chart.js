@@ -42,7 +42,7 @@ function Chart({ expenses = [], fetchExpenses, user }) {
 
   return (
     <div className="chart-container">
-      <h2>Amount</h2>
+      <h2>Expense Graph</h2>
       <div id="amount" className="bar-chart" />
     </div>
   );

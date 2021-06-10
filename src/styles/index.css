@@ -100,7 +100,7 @@ nav div {
 .login-container {
   padding: 10px;
   margin-bottom: 50px;
-  overflow: scroll;
+  overflow: hidden;
   margin-top: 65px;
 }
 
