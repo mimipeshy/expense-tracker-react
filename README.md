@@ -8,8 +8,8 @@
 
 ## Presentations
 
-- View the live version [HERE](https://suspicious-wozniak-c08912.netlify.app/login)
-- View the project walkthrough [HERE]()
+- View the live version [HERE](https://peris-expense-tracker.netlify.app)
+- View the project walkthrough [HERE](https://www.loom.com/share/158f47e0133447af866be2f48391bcec)
 
 ## Rails Backend API Association Diagram
 

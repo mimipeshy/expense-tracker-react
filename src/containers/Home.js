@@ -7,7 +7,7 @@ function Home({ user }) {
     <div className="home-container">
       <h1>
         Welcome
-        {user.username}
+        { user.username }
       </h1>
       <h3>
         &quot;Beware of little expenses.A small leak will sink a great

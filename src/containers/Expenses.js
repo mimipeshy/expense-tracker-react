@@ -28,7 +28,7 @@ function Expenses({ expenses = [], fetchExpenses, user }) {
                         </p>
                         <p>
                           {' '}
-                          Ksh
+                          $
                           {expense.amount}
                         </p>
                         <p>{expense.date}</p>
