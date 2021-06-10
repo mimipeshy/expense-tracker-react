@@ -2,8 +2,8 @@ import rootReducer from '../reducers';
 
 const initialState = {
   expenseReducer: {
-         "expenses": [],
-        },
+    expenses: [],
+  },
   userReducer: { auth: false, user: {}, users: [] },
 };
 
