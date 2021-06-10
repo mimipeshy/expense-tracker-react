@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -6,7 +5,10 @@ import { connect } from 'react-redux';
 function Home({ user }) {
   return (
     <div className="home-container">
-      <h1>Welcome {user.username}</h1>
+      <h1>
+        Welcome
+        {user.username}
+      </h1>
       <h3>
         &quot;Beware of little expenses.A small leak will sink a great
         ship&quot; - Benjamin Franklin

@@ -4,7 +4,7 @@
 
 ## Snapshots
 
-![image]()
+![image](images/login.png)
 
 ## Presentations
 
@@ -13,7 +13,7 @@
 
 ## Rails Backend API Association Diagram
 
-![image]()
+![image](images/ERD.PNG)
 
 ## Built With
 
@@ -46,7 +46,7 @@
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page]().
+Feel free to check the [issues page](https://github.com/mimipeshy/expense-tracker-react/issues).
 
 ## Show your support
 

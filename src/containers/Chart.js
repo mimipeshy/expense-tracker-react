@@ -11,9 +11,10 @@ function Chart({ expenses = [], fetchExpenses, user }) {
 
     //  the data that powers the bar chart, a simple array of numeric values
     const amountData = expenses.map((expense) => expense.amount);
+    // const amountName = expenses.map((expense) => expense.name);
 
     //  the size of the overall svg element
-    const height = 200;
+    const height = 300;
     const width = 300;
 
     //  the width of each bar and the offset between each bar
