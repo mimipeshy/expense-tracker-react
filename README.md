@@ -9,7 +9,7 @@
 ## Presentations
 
 - View the live version [HERE](https://peris-expense-tracker.netlify.app)
-- View the project walkthrough [HERE](https://www.loom.com/share/158f47e0133447af866be2f48391bcec)
+- View the project walkthrough [HERE](https://www.loom.com/share/40c7b17100324c5cbb04a6e2bd5fd414)
 
 ## Rails Backend API Association Diagram
 
