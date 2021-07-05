@@ -15,11 +15,10 @@ Array [
           <div
             className="home-summary-info"
           >
-            NaN
-              k
+              Ksh
           </div>
           <p>
-            Expent
+            Spent
           </p>
         </div>
         <div
@@ -28,8 +27,7 @@ Array [
           <div
             className="home-summary-info"
           >
-            0.0
-              k
+              Ksh
           </div>
           <p>
             Target
@@ -42,7 +40,7 @@ Array [
             className="home-summary-info"
           >
             NaN
-              k
+              Ksh
           </div>
           <p>
             Balance
@@ -63,8 +61,7 @@ Array [
             />
             <div>
               <p>
-                NaN
-                  k
+                  Ksh
               </p>
               <span>
                 Education
@@ -79,8 +76,7 @@ Array [
             />
             <div>
               <p>
-                NaN
-                  k
+                  Ksh
               </p>
               <span>
                 Grocery
@@ -91,28 +87,11 @@ Array [
             className="home-catalogue-item"
           >
             <i
-              className="fas fa-heartbeat"
-            />
-            <div>
-              <p>
-                NaN
-                  k
-              </p>
-              <p>
-                Health
-              </p>
-            </div>
-          </div>
-          <div
-            className="home-catalogue-item"
-          >
-            <i
               className="fas fa-gamepad"
             />
             <div>
               <p>
-                NaN
-                  k
+                  Ksh
               </p>
               <span>
                 Leisure
@@ -127,8 +106,7 @@ Array [
             />
             <div>
               <p>
-                NaN
-                  k
+                  Ksh
               </p>
               <span>
                 Living
@@ -143,8 +121,7 @@ Array [
             />
             <div>
               <p>
-                NaN
-                  k
+                  Ksh
               </p>
               <span>
                 Transport

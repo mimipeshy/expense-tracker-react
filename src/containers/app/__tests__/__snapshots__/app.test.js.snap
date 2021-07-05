@@ -8,7 +8,7 @@ exports[`Display renders correctly 1`] = `
     className="navbar"
   >
     <h1>
-      Personal Expenses
+      Expense Tracker
     </h1>
   </div>
   <div
@@ -20,7 +20,7 @@ exports[`Display renders correctly 1`] = `
       <p
         className="welcome-text"
       >
-        Welcome to Personal Expenses, your personal expenses managing application.
+        Welcome to Expense Tracker, your personal expenses managing application.
       </p>
       <p
         className="welcome-text"

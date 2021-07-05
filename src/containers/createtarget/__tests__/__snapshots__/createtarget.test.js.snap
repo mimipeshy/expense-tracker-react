@@ -8,7 +8,7 @@ exports[`Display renders correctly 1`] = `
     className="target-input"
     id="target-input"
     onChange={[Function]}
-    placeholder="Input target here"
+    placeholder="Set a target here"
   />
   
   <button

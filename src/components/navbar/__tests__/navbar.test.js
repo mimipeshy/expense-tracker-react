@@ -10,7 +10,7 @@ describe('Rendering component', () => {
       );
     });
     // eslint-disable-next-line
-    const element = screen.getByText('Personal Expenses');
+    const element = screen.getByText('Expense Tracker');
   });
 });
 

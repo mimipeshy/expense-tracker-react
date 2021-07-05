@@ -5,7 +5,7 @@ exports[`Display renders correctly 1`] = `
   className="navbar"
 >
   <h1>
-    Personal Expenses
+    Expense Tracker
   </h1>
 </div>
 `;
