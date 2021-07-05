@@ -1,5 +1,4 @@
 const indexExpenditures = async (userId) => {
-  // const url = `http://localhost:5000/expenditures?user_id=${userId}`;
   const url = `https://peris-expense-track.herokuapp.com/expenditures?user_id=${userId}`;
   const config = {
     mode: 'cors',

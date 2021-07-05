@@ -1,5 +1,4 @@
 const deleteExpenditures = async (id) => {
-  // const url = `http://localhost:5000/expenditures/${id}`;
   const url = `https://peris-expense-track.herokuapp.com/expenditures/${id}`;
   const config = {
     mode: 'cors',

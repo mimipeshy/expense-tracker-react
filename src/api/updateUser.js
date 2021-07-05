@@ -1,5 +1,4 @@
 const updateUser = async (data, id) => {
-  // const url = `http://localhost:5000/users/${id}`;
   const url = `https://peris-expense-track.herokuapp.com/users/${id}`;
   const config = {
     mode: 'cors',
