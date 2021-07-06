@@ -20,7 +20,6 @@
 - React & Redux
 - Rails for API
 - Enzyme & Jest for Testing
-- D3.js for Charting
 
 ## Deployment
 
